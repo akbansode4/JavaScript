@@ -1,6 +1,10 @@
-var x;   /* Veriable declaration without Intialization value is undefined */
-var age = Number;   //Veriable declaration It comes in Green color
-var firstName = 'Akshay';
+var FirstName = 'Akshay' | String;;   /* Veriable declaration without Intialization value is undefined */
+var age;   //Veriable declaration It comes in Green color
 age = 22   // Veriable Intialization
 age = 29  // Veriable Update
-console.log(firstName);
+
+var n = true | Boolean;
+
+
+console.log(typeof n);
+console.log(n);
