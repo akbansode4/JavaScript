@@ -23,10 +23,11 @@ for (let index = 0; index < str.length; index++) {
         
     }
     sentence = sentence.concat(word)
-    sentence = sentence.concat(" ")
+    if (index >! str.length)
+        sentence = sentence.concat(" ")
   
     
 }
-console.log(sentence.trim());
+console.log(sentence);
 
 

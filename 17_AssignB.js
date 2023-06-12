@@ -18,44 +18,48 @@ const emp_viny = new Employee(88,'Viny','IT',75000,"TCS");
 const emp_mahi = new Employee(99,'Mahi','Hr',85000,"Infy");
 
 const arrayEmployess = [emp_anil,emp_radha,emp_rishi,emp_sonali,emp_monika,emp_viny,emp_mahi]
-for (let index = 0; index < arrayEmployess.length; index++) {
-    
-    if (arrayEmployess[index].empComapny=="TCS") {
-        console.log('------TCS Workrer ------------');
-        console.log(arrayEmployess[index].empName,": ", arrayEmployess[index].empComapny);
-    };    
-}
-for (let index = 0; index < arrayEmployess.length; index++) {    
-    if (arrayEmployess[index].empDept=="Finance") {
-        console.log('------Finance Dept Workrer ------------');
-        console.log(arrayEmployess[index].empName,": ", arrayEmployess[index].empDept);
-    }
-    
-}
+
+console.log('------TCS Workrer ------------');
+arrayEmployess.forEach(function(currentValue,index){
+    if (currentValue.empComapny=="TCS") {
+        console.log(currentValue.empName,": ", currentValue.empComapny);
+    }; 
+});
+
+console.log('------Finance Dept Workrer ------------');
+arrayEmployess.forEach(function(currentValue,index){
+    if (currentValue.empDept=="Finance") {
+        console.log(currentValue.empName,": ", currentValue.empDept);
+    }; 
+});
+
+
+
+
+console.log('------Start with R name Workrer ------------');
 for (let index = 0; index < arrayEmployess.length; index++) {    
     if (arrayEmployess[index].empName.startsWith("R")) {
-        console.log('------Start with R name Workrer ------------');
         console.log(arrayEmployess[index]);
     }
     
 }
+
+console.log('------Salary Greater than 75000 ------------');
 for (let index = 0; index < arrayEmployess.length; index++) {    
     if (arrayEmployess[index].empSalary >= 75000) {
-        console.log('------Salary Greater than 75000 ------------');
         console.log(arrayEmployess[index].empName,": ", arrayEmployess[index].empComapny, arrayEmployess[index].empSalary);
     }
 }
+console.log('------Salary Greater than 50000 and IT Dept ------------');
 for (let index = 0; index < arrayEmployess.length; index++) {    
     if (arrayEmployess[index].empSalary >= 50000 && arrayEmployess[index].empDept=="IT") {
-        console.log('------Salary Greater than 50000 and IT Dept ------------');
         console.log(arrayEmployess[index]);
     }
 }
 
+console.log('------Infy Workrer ------------');
 for (let index = 0; index < arrayEmployess.length; index++) {
-    
     if (arrayEmployess[index].empComapny=="Infy") {
-        console.log('------Infy Workrer ------------');
         console.log(arrayEmployess[index]);
     };    
 }
