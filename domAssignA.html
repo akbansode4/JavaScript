@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Elements</title>
+</head>
+<body>
+    <main>
+        <div id="overview">
+            <h1>HTML and JavaScript are crucial technology</h1>
+        </div>
+        <div>
+            <h5>The Web would not work without them</h6>
+        </div>
+        <div id="advantages">
+            <ul>
+                <li>Flexible</li>
+                <li>Available</li>
+                <li>Magical</li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        const mainHandling = document.querySelector('h1')
+        console.log(mainHandling.innerHTML);
+        const secondAdvantage = document.querySelectorAll('li')
+        console.log(secondAdvantage[1].innerHTML);
+        const adDiv = document.querySelector('#advantages')
+        console.log(adDiv.innerHTML);
+    </script>
+</body>
+</html>

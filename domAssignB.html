@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Selector</title>
+</head>
+<body>
+    <div><h1 id="heading">My Profile Details</h1></div>
+    <div style="color: red;"><h2>Technology Stack</h2></div>
+    <ul id="teckStack">
+        <li>HTML and CSS</li>
+        <li id="stack">Agile and Jira</li>
+        <li>Angular or React</li>
+        <li>Oracle Database</li>
+    </ul>
+    <div><h1>My Hobbies</h1></div>
+    <div style="text-decoration: underline;">My profile</div>
+    <div>Project Discription</div>
+    <script>
+        const elementHeading = document.querySelector('#heading')
+        elementHeading.style.color='blue';
+        const elementteckStack = document.querySelector('#teckStack')
+        const childElement = document.querySelector('#stack')
+        elementteckStack.removeChild(childElement)
+    </script>
+</body>
+</html>
