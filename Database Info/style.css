@@ -1,0 +1,32 @@
+img{
+    width: 150px;
+    height: 100px;
+    padding-left: 50px;
+    margin: 10px;
+
+}
+
+.heading{
+    background-color: green;
+}
+.database{
+    display: inline-block;
+    width: 280px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+}
+.sql{
+    position: relative;
+    right: 5px;
+}
+.heading,.text{
+    padding: 20px;
+    text-align: center;
+}
+.heading{
+    color: aliceblue;
+}
+div.sql .heading{
+background-color: rgb(243, 120, 6);
+}
+
